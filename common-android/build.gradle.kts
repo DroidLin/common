@@ -46,6 +46,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":common-jvm"))
 }
 
 publishing {

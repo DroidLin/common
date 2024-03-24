@@ -1,0 +1,1 @@
+-keepclasseswithmembernames class * implements com.android.dependencies.common.INoProguard
