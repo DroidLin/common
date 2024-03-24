@@ -1,5 +1,3 @@
-include(":jvm-only-module")
-
 pluginManagement {
     repositories {
         maven { url = uri("${rootProject.projectDir}/repo") }
@@ -20,5 +18,7 @@ dependencyResolutionManagement {
 }
 
 
-rootProject.name = "ProjectName"
-include(":android-only-module")
+rootProject.name = "common"
+//include(":android-only-module")
+//include(":jvm-only-module")
+include(":common-jvm")
