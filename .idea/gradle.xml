@@ -11,9 +11,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/android-only-module" />
+            <option value="$PROJECT_DIR$/common-android" />
             <option value="$PROJECT_DIR$/common-jvm" />
-            <option value="$PROJECT_DIR$/jvm-only-module" />
           </set>
         </option>
       </GradleProjectSettings>

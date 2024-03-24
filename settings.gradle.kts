@@ -19,6 +19,5 @@ dependencyResolutionManagement {
 
 
 rootProject.name = "common"
-//include(":android-only-module")
-//include(":jvm-only-module")
 include(":common-jvm")
+include(":common-android")
