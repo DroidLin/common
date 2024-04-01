@@ -47,6 +47,7 @@ android {
 
 dependencies {
     implementation(project(":common-jvm"))
+    implementation("androidx.startup:startup-runtime:1.1.1")
 }
 
 publishing {
