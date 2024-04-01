@@ -1,6 +1,6 @@
 package com.android.dependencies.common
 
-sealed interface ComponentInstaller {
+interface ComponentInstaller {
 
     fun <T : Any> install(clazz: Class<T>, implementation: T)
 
