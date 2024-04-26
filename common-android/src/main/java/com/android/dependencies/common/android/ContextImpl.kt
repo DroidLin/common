@@ -7,7 +7,7 @@ import java.lang.ref.WeakReference
  * @author liuzhongao
  * @since 2024/4/1 23:35
  */
-internal object ContextImpl : IContext {
+internal data object ContextImpl : IContext {
     private var _contextRef: WeakReference<Context>? = null
 
     override val applicationContext: Context

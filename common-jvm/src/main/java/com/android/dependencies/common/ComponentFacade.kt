@@ -7,9 +7,13 @@ object ComponentFacade {
     private val _componentFactoryMap: MutableMap<Class<*>, Component.Factory<*>> = HashMap()
     private val _componentInstanceMap: MutableMap<Class<*>, Any> = HashMap()
 
-    init {
+    fun autoInit() {
         val componentList = ServiceLoader.load(Component::class.java).toList()
         componentList.forEach { component: Component? -> component?.collect(ComponentInstaller) }
+    }
+
+    fun initComponent(vararg component: Component) {
+        component.forEach { it.collect(ComponentInstaller) }
     }
 
     @JvmStatic

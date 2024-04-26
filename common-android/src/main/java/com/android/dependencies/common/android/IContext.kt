@@ -6,7 +6,7 @@ import android.content.Context
  * @author liuzhongao
  * @since 2024/4/1 23:34
  */
-interface IContext {
+sealed interface IContext {
 
     val applicationContext: Context
 }

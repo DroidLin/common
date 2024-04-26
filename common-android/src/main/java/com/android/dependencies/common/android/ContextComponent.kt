@@ -7,7 +7,7 @@ import com.android.dependencies.common.ComponentInstaller
  * @author liuzhongao
  * @since 2024/4/1 23:22
  */
-internal class ContextComponent : Component {
+class ContextComponent : Component {
 
     override val name: String get() = "ContextComponent"
 
